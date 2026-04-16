@@ -1,0 +1,22 @@
+# sketch2real — requirements
+# Install with: pip install -r requirements.txt
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Hugging Face diffusion pipeline
+diffusers>=0.25.0
+transformers>=4.36.0
+accelerate>=0.25.0
+
+# Image processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Optional: faster attention (NVIDIA GPU only)
+# xformers>=0.0.23
+
+# Optional: download progress bar
+tqdm>=4.65.0
