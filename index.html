@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sketch to Real AI</title>
+    <style>
+        body { font-family: Arial; text-align:center; padding: 40px; background: #f4f4f4; }
+        .container { background: white; padding: 30px; display: inline-block; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        img { margin-top: 20px; border: 1px solid #ccc; background: #eee; min-height: 100px; display: block; margin-left: auto; margin-right: auto; }
+        #status { color: #555; margin-top: 15px; font-weight: bold; }
+        button { padding: 12px 25px; font-size: 16px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 5px; }
+        button:disabled { background: #ccc; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sketch → Real Image</h2>
+
+    <input type="file" id="sketch" accept="image/*">
+    <br>
+    <img id="preview" width="300" src="">
+
+    <br><br>
+    <input type="text" id="prompt" placeholder="Enter prompt here..." style="width:300px; padding: 10px;">
+    
+    <br><br>
+    <button type="button" id="genBtn">Generate</button>
+    
+    <p id="status">Upload an image to start</p>
+
+    <br>
+    <h3>Generated Output</h3>
+    <img id="output" width="400" src="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
